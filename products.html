@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Velvet Vogue</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div>Free shipping on orders over $100</div>
+        <div id="auth-status"></div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">
+            Velvet<span>Vogue</span>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/products.html">Products</a></li>
+              <li><a href="/new-arrivals.html">New Arrivals</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/feedback.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="icon-btn" id="cart-btn" title="Shopping Cart">
+              🛒
+              <span class="cart-badge" id="cart-count">0</span>
+            </button>
+            <button class="icon-btn" id="profile-btn" title="Profile">
+              👤
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>Browse our complete collection</p>
+        </div>
+
+        <div class="filter-section">
+          <div class="filter-group">
+            <h3>Category</h3>
+            <div class="filter-options">
+              <button class="filter-tag active" data-filter="all" data-type="category">All</button>
+              <button class="filter-tag" data-filter="Jackets" data-type="category">Jackets</button>
+              <button class="filter-tag" data-filter="Shoes" data-type="category">Shoes</button>
+              <button class="filter-tag" data-filter="Hoodies" data-type="category">Hoodies</button>
+              <button class="filter-tag" data-filter="Shirts" data-type="category">Shirts</button>
+              <button class="filter-tag" data-filter="T-Shirts" data-type="category">T-Shirts</button>
+              <button class="filter-tag" data-filter="Dresses" data-type="category">Dresses</button>
+              <button class="filter-tag" data-filter="Accessories" data-type="category">Accessories</button>
+              <button class="filter-tag" data-filter="Shorts" data-type="category">Shorts</button>
+              <button class="filter-tag" data-filter="Skirts" data-type="category">Skirts</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Gender</h3>
+            <div class="filter-options">
+              <button class="filter-tag active" data-filter="all" data-type="gender">All</button>
+              <button class="filter-tag" data-filter="men" data-type="gender">Men</button>
+              <button class="filter-tag" data-filter="women" data-type="gender">Women</button>
+              <button class="filter-tag" data-filter="unisex" data-type="gender">Unisex</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Price Range</h3>
+            <div class="filter-options">
+              <button class="filter-tag active" data-filter="all" data-type="price">All</button>
+              <button class="filter-tag" data-filter="0-50" data-type="price">Under $50</button>
+              <button class="filter-tag" data-filter="50-100" data-type="price">$50 - $100</button>
+              <button class="filter-tag" data-filter="100-200" data-type="price">$100 - $200</button>
+              <button class="filter-tag" data-filter="200+" data-type="price">$200+</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="search-input" placeholder="Search products..." style="max-width: 400px;">
+          </div>
+        </div>
+
+        <div id="products-container" class="products-grid">
+          <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading products...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Velvet Vogue</h3>
+          <p>Your destination for trendy casualwear and elegant formal wear.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/new-arrivals.html">New Arrivals</a></li>
+            <li><a href="/about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="/feedback.html">Contact Us</a></li>
+            <li><a href="/profile.html">My Account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Velvet Vogue. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Arrivals - Velvet Vogue</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div>Free shipping on orders over $100</div>
+        <div id="auth-status"></div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">
+            Velvet<span>Vogue</span>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/products.html">Products</a></li>
+              <li><a href="/new-arrivals.html">New Arrivals</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/feedback.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="icon-btn" id="cart-btn" title="Shopping Cart">
+              🛒
+              <span class="cart-badge" id="cart-count">0</span>
+            </button>
+            <button class="icon-btn" id="profile-btn" title="Profile">
+              👤
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 60px 0;">
+      <div class="container">
+        <h1>New Arrivals</h1>
+        <p>Check out our latest collection of trendy styles</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="new-arrivals-container" class="products-grid">
+          <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading new arrivals...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Velvet Vogue</h3>
+          <p>Your destination for trendy casualwear and elegant formal wear.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/new-arrivals.html">New Arrivals</a></li>
+            <li><a href="/about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="/feedback.html">Contact Us</a></li>
+            <li><a href="/profile.html">My Account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Velvet Vogue. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/new-arrivals.js"></script>
+</body>
+</html>

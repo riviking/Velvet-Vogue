@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - Velvet Vogue</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div>Free shipping on orders over $100</div>
+        <div id="auth-status"></div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">
+            Velvet<span>Vogue</span>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/products.html">Products</a></li>
+              <li><a href="/new-arrivals.html">New Arrivals</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/feedback.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="icon-btn" id="cart-btn" title="Shopping Cart">
+              🛒
+              <span class="cart-badge" id="cart-count">0</span>
+            </button>
+            <button class="icon-btn" id="profile-btn" title="Profile">
+              👤
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Profile</h2>
+          <p>Manage your account and view your orders</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 50px;">
+          <div style="background-color: var(--bg-white); padding: 30px; border-radius: 10px; box-shadow: var(--shadow-sm);">
+            <h3 style="margin-bottom: 20px;">Profile Information</h3>
+            <div id="profile-message"></div>
+            <form id="profile-form">
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" disabled>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Update Profile</button>
+            </form>
+          </div>
+
+          <div style="background-color: var(--bg-white); padding: 30px; border-radius: 10px; box-shadow: var(--shadow-sm);">
+            <h3 style="margin-bottom: 20px;">Account Actions</h3>
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+              <button class="btn btn-outline" onclick="window.location.href='/cart.html'">View Cart</button>
+              <button class="btn btn-outline" onclick="window.location.href='/products.html'">Browse Products</button>
+              <div id="admin-link"></div>
+              <button class="btn btn-secondary" id="logout-btn">Logout</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="background-color: var(--bg-white); padding: 30px; border-radius: 10px; box-shadow: var(--shadow-sm);">
+          <h3 style="margin-bottom: 20px;">Order History</h3>
+          <div id="orders-container">
+            <div class="loading">
+              <div class="spinner"></div>
+              <p>Loading orders...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Velvet Vogue</h3>
+          <p>Your destination for trendy casualwear and elegant formal wear.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/new-arrivals.html">New Arrivals</a></li>
+            <li><a href="/about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="/feedback.html">Contact Us</a></li>
+            <li><a href="/profile.html">My Account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Velvet Vogue. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/profile.js"></script>
+</body>
+</html>

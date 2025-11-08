@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Velvet Vogue</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div>Free shipping on orders over $100</div>
+        <div id="auth-status"></div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">
+            Velvet<span>Vogue</span>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/products.html">Products</a></li>
+              <li><a href="/new-arrivals.html">New Arrivals</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/feedback.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="icon-btn" id="cart-btn" title="Shopping Cart">
+              🛒
+              <span class="cart-badge" id="cart-count">0</span>
+            </button>
+            <button class="icon-btn" id="profile-btn" title="Profile">
+              👤
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 60px 0;">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;">
+          <div>
+            <h2 style="margin-bottom: 20px;">Get in Touch</h2>
+            <p style="color: var(--text-light); margin-bottom: 30px; line-height: 1.8;">
+              Have a question, suggestion, or just want to say hello? Fill out the form and we'll get back to you as soon as possible.
+            </p>
+
+            <div style="background-color: var(--bg-white); padding: 30px; border-radius: 10px; box-shadow: var(--shadow-sm); margin-bottom: 30px;">
+              <h3 style="margin-bottom: 20px;">Contact Information</h3>
+              <div style="margin-bottom: 15px;">
+                <strong>Email:</strong>
+                <p style="color: var(--text-light);">support@velvetvogue.com</p>
+              </div>
+              <div style="margin-bottom: 15px;">
+                <strong>Phone:</strong>
+                <p style="color: var(--text-light);">+1 (555) 123-4567</p>
+              </div>
+              <div style="margin-bottom: 15px;">
+                <strong>Address:</strong>
+                <p style="color: var(--text-light);">123 Fashion Street, Style City, SC 12345</p>
+              </div>
+              <div>
+                <strong>Business Hours:</strong>
+                <p style="color: var(--text-light);">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p style="color: var(--text-light);">Saturday: 10:00 AM - 4:00 PM</p>
+                <p style="color: var(--text-light);">Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="background-color: var(--bg-white); padding: 40px; border-radius: 10px; box-shadow: var(--shadow-md);">
+            <h3 style="margin-bottom: 20px;">Send us a Message</h3>
+            <div id="feedback-message"></div>
+            <form id="feedback-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required rows="6" placeholder="Tell us what's on your mind..."></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Velvet Vogue</h3>
+          <p>Your destination for trendy casualwear and elegant formal wear.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/new-arrivals.html">New Arrivals</a></li>
+            <li><a href="/about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="/feedback.html">Contact Us</a></li>
+            <li><a href="/profile.html">My Account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Velvet Vogue. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/feedback.js"></script>
+</body>
+</html>

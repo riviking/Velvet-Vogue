@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Vogue - Trendy Fashion for Young Adults</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div>Free shipping on orders over $100</div>
+        <div id="auth-status"></div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">
+            Velvet<span>Vogue</span>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/products.html">Products</a></li>
+              <li><a href="/new-arrivals.html">New Arrivals</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/feedback.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="icon-btn" id="cart-btn" title="Shopping Cart">
+              🛒
+              <span class="cart-badge" id="cart-count">0</span>
+            </button>
+            <button class="icon-btn" id="profile-btn" title="Profile">
+              👤
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Express Your Identity Through Style</h1>
+        <p>Discover trendy casualwear and elegant formal wear for young adults</p>
+        <div class="hero-buttons">
+          <a href="/products.html" class="btn btn-primary">Shop Now</a>
+          <a href="/new-arrivals.html" class="btn btn-outline">New Arrivals</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Products</h2>
+          <p>Check out our most popular items</p>
+        </div>
+        <div id="featured-products" class="products-grid">
+          <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading products...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background-color: var(--bg-white);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Shop by Category</h2>
+          <p>Find exactly what you're looking for</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-card" onclick="window.location.href='/products.html?category=casualwear'">
+            <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Casualwear" class="product-image">
+            <div class="product-info">
+              <h3 class="product-name">Casualwear</h3>
+              <p>Comfortable everyday styles</p>
+            </div>
+          </div>
+          <div class="product-card" onclick="window.location.href='/products.html?category=formalwear'">
+            <img src="https://images.pexels.com/photos/1778412/pexels-photo-1778412.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Formalwear" class="product-image">
+            <div class="product-info">
+              <h3 class="product-name">Formalwear</h3>
+              <p>Elegant professional attire</p>
+            </div>
+          </div>
+          <div class="product-card" onclick="window.location.href='/products.html?category=accessories'">
+            <img src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Accessories" class="product-image">
+            <div class="product-info">
+              <h3 class="product-name">Accessories</h3>
+              <p>Complete your look</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>New Arrivals</h2>
+          <p>Fresh styles just landed</p>
+        </div>
+        <div id="new-arrivals" class="products-grid">
+          <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading new arrivals...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Velvet Vogue</h3>
+          <p>Your destination for trendy casualwear and elegant formal wear. Express your identity through style.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/new-arrivals.html">New Arrivals</a></li>
+            <li><a href="/about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="/feedback.html">Contact Us</a></li>
+            <li><a href="/profile.html">My Account</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <p>Follow us on social media for the latest updates and exclusive offers.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Velvet Vogue. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/home.js"></script>
+</body>
+</html>
